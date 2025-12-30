@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliseo Studio | Arquitectura Digital</title>
+    <meta name="description" content="Arquitectura de autoridad para marcas de élite. Sistemas de IA y diseño premium.">
+    
+    <!-- Fuentes e Iconos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .text-gradient {
+            background: linear-gradient(180deg, #ffffff 0%, #a1a1a6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-nav {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-nav.scrolled {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .glass-nav.scrolled > div > div {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+        .animate-slide-up { animation: slideUp 1s ease-out forwards; }
+        
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-400 { animation-delay: 0.4s; }
+
+        .apple-card {
+            background: #0A0A0A;
+            border: 1px solid #1C1C1E;
+            border-radius: 40px;
+            transition: all 0.5s ease;
+        }
+
+        .apple-card:hover {
+            border-color: #333336;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Ocultar barra de scroll pero mantener funcionalidad */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 py-6 md:py-10 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="backdrop-blur-3xl bg-black/40 border border-white/20 rounded-full px-6 md:px-10 py-4 flex justify-between items-center transition-all duration-500">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <span class="text-black font-bold text-sm">e.</span>
+                    </div>
+                    <span class="font-semibold tracking-tighter text-lg md:text-xl uppercase">ELISEO STUDIO</span>
+                </div>
+                <div class="hidden md:flex gap-10 text-[10px] font-bold tracking-[0.3em] text-[#86868B] uppercase">
+                    <a href="#mision" class="hover:text-white transition-colors">Misión</a>
+                    <a href="#ia" class="hover:text-white transition-colors">IA Instantánea</a>
+                    <a href="#contacto" class="hover:text-white transition-colors">Infraestructura</a>
+                </div>
+                <a href="https://wa.me/543795041420" target="_blank" class="bg-white text-black px-5 md:px-6 py-2 rounded-full text-[11px] font-bold hover:bg-[#F5F5F7] transition-all">
+                    CONTACTO
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center px-8 text-center pt-52 md:pt-64 pb-20">
+        <div class="animate-fade-in w-full max-w-5xl">
+            <span class="text-[10px] md:text-[12px] font-bold tracking-[0.6em] text-[#0071E3] uppercase mb-12 block opacity-0 animate-fade-in delay-200">
+                Arquitecto Digital
+            </span>
+            <h1 class="text-5xl md:text-8xl font-bold tracking-[-0.04em] leading-[1.1] md:leading-[0.95] mb-12 text-gradient">
+                Arquitectura de Autoridad para Marcas de Élite.
+            </h1>
+            <p class="text-lg md:text-2xl text-[#86868B] font-light max-w-2xl mx-auto mb-14 leading-relaxed">
+                Convertimos el potencial de su negocio en una <span class="text-white font-normal">infraestructura digital</span> de alto rendimiento.
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center opacity-0 animate-slide-up delay-400">
+                <a href="#contacto" class="bg-[#0071E3] text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-[#0077ED] transition-all flex items-center justify-center gap-2 group shadow-lg shadow-[#0071E3]/20">
+                    Iniciar Proyecto
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://chomp-best.github.io/proyectos/" target="_blank" class="bg-transparent border border-[#333336] text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-[#1C1C1E] transition-all flex items-center justify-center">
+                    Explorar Demos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión Section -->
+    <section id="mision" class="py-[10rem] px-8 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-[10px] font-bold tracking-[0.5em] text-[#0071E3] uppercase mb-4 block">Misión</span>
+                <h2 class="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-gradient">El Arquitecto detrás del Código.</h2>
+                <div class="space-y-6 text-lg font-light text-[#86868B] leading-relaxed">
+                    <p>
+                        Como <span class="text-white font-medium">Arquitecto digital</span> de 19 años, me especializo en crear Web Apps de estética Premium para negocios que buscan profesionalizar su imagen y automatizar sus ventas.
+                    </p>
+                    <p>
+                        Mi enfoque combina el diseño minimalista tipo Apple con la utilidad funcional necesaria para que el dueño del negocio <span class="text-white font-medium">recupere su tiempo</span>.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-[#0A0A0A] border border-[#1C1C1E] p-12 rounded-[40px] flex flex-col items-center justify-center text-center">
+                <div class="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+                    <span class="text-black text-4xl font-light tracking-tighter">e.</span>
+                </div>
+                <h3 class="text-xl font-medium mb-4 tracking-tight">Eliseo Strategy</h3>
+                <p class="text-[#86868B] text-sm mb-6 uppercase tracking-widest font-bold">Protocolo de Autoridad</p>
+                <button onclick="downloadVCard()" class="flex items-center gap-2 text-[#0071E3] hover:text-[#2997ff] transition-colors font-medium text-sm border border-[#0071E3]/20 px-6 py-3 rounded-full hover:bg-[#0071E3]/5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"></path><path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4z"></path></svg>
+                    Guardar contacto en Wallet
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- IA Section -->
+    <section id="ia" class="py-[10rem] px-8 bg-[#0A0A0A]">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-gradient-to-br from-[#1C1C1E] to-[#000000] border border-[#333336] rounded-[40px] p-10 md:p-20 relative overflow-hidden group">
+                <div class="absolute -right-20 -top-20 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white" width="400" height="400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="m5 3 1 2"></path><path d="m19 21 1-2"></path><path d="m5 21 1-2"></path><path d="m19 3 1-2"></path></svg>
+                </div>
+                <div class="relative z-10 max-w-3xl">
+                    <span class="text-[10px] font-bold tracking-[0.5em] text-[#0071E3] uppercase mb-6 block">Consultoría Estratégica</span>
+                    <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-8">Escale su operación con IA Instantánea.</h2>
+                    <p class="text-[#86868B] text-xl font-light mb-12 leading-relaxed">
+                        Acceda a nuestra infraestructura de inteligencia para optimizar sus procesos de venta y atención al cliente en tiempo real.
+                    </p>
+                    <a href="https://chomp-best.github.io/ia/" target="_blank" class="inline-flex items-center gap-3 bg-white text-black px-10 py-5 rounded-full text-lg font-bold hover:bg-[#F5F5F7] transition-all group">
+                        Acceder al Consultor IA
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:rotate-12 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-[10rem] px-8 max-w-7xl mx-auto">
+        <div class="mb-20">
+            <span class="text-[10px] font-bold tracking-[0.5em] text-[#0071E3] uppercase mb-4 block">Ecosistemas</span>
+            <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">Infraestructura Funcional.</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="apple-card p-10 group relative">
+                <div class="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+                <div class="w-14 h-14 bg-[#1C1C1E] rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white transition-colors duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white group-hover:text-black w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="15" x2="23" y2="15"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="15" x2="4" y2="15"/></svg>
+                </div>
+                <span class="text-[10px] font-bold tracking-[0.5em] text-[#0071E3] uppercase mb-4 block">Inteligencia</span>
+                <h3 class="text-2xl font-semibold mb-4 tracking-tight">IA & Automatización</h3>
+                <p class="text-[#86868B] text-lg font-light leading-relaxed">Sistemas inteligentes de venta 24/7 que gestionan su demanda operativa sin intervención humana.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="apple-card p-10 group relative">
+                <div class="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+                <div class="w-14 h-14 bg-[#1C1C1E] rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white transition-colors duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white group-hover:text-black w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                </div>
+                <span class="text-[10px] font-bold tracking-[0.5em] text-[#0071E3] uppercase mb-4 block">Experiencia</span>
+                <h3 class="text-2xl font-semibold mb-4 tracking-tight">Arquitectura UX Pro</h3>
+                <p class="text-[#86868B] text-lg font-light leading-relaxed">Diseño Apple-style enfocado en conversión, optimizado para convertir visitantes en activos de alto valor.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="apple-card p-10 group relative">
+                <div class="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+                <div class="w-14 h-14 bg-[#1C1C1E] rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white transition-colors duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white group-hover:text-black w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <span class="text-[10px] font-bold tracking-[0.5em] text-[#0071E3] uppercase mb-4 block">Estrategia</span>
+                <h3 class="text-2xl font-semibold mb-4 tracking-tight">Estrategia de Crecimiento</h3>
+                <p class="text-[#86868B] text-lg font-light leading-relaxed">Modelos de escalabilidad diseñados para negocios B2B y Retail que requieren autoridad digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Infrastructure Section -->
+    <section id="contacto" class="py-[10rem] px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <span class="text-[10px] font-bold tracking-[0.5em] text-[#0071E3] uppercase mb-4 block">Conexión Directa</span>
+            <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">Inicie su Transformación.</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <a href="https://wa.me/543795041420?text=Hola%20Eliseo,%20vi%20tu%20tarjeta%20digital%20y%20me%20gustaría%20iniciar%20un%20proyecto%20contigo." target="_blank" class="flex flex-col items-center justify-center p-12 bg-[#0A0A0A] border border-[#1C1C1E] rounded-[40px] hover:border-[#333336] transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#0071E3] mb-6 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.7 8.38 8.38 0 0 1 3.8.9L21 3z"/></svg>
+                <h3 class="text-2xl font-semibold mb-2">WhatsApp Directo</h3>
+                <p class="text-[#86868B] mb-8">Consultas de infraestructura inmediata.</p>
+                <span class="text-white font-medium flex items-center gap-2">Iniciar conversación <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+            </a>
+
+            <a href="https://chomp-best.github.io/proyectos/" target="_blank" class="flex flex-col items-center justify-center p-12 bg-[#0A0A0A] border border-[#1C1C1E] rounded-[40px] hover:border-[#333336] transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-white mb-6 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <h3 class="text-2xl font-semibold mb-2">Portfolio de Activos</h3>
+                <p class="text-[#86868B] mb-8">Explore nuestras implementaciones de élite.</p>
+                <span class="text-white font-medium flex items-center gap-2">Ver proyectos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Filosofía Section -->
+    <section class="py-[10rem] bg-[#0A0A0A] border-y border-[#1C1C1E]">
+        <div class="max-w-5xl mx-auto px-8 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#0071E3] mx-auto mb-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <h2 class="text-3xl md:text-5xl font-semibold tracking-tight leading-tight mb-12">
+                "No diseñamos simples interfaces; construimos la <span class="text-white italic">presencia definitiva</span> de su legado en la red."
+            </h2>
+            <div class="w-20 h-[1px] bg-[#333336] mx-auto mb-8"></div>
+            <p class="text-[#86868B] text-[12px] font-bold tracking-[0.4em] uppercase">Eliseo Strategy • 2025</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-[5rem] px-8 border-t border-[#1C1C1E]">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold tracking-tighter mb-2 uppercase">ELISEO STUDIO</h3>
+                <p class="text-[#86868B] text-sm">Arquitectura Digital de Élite.</p>
+            </div>
+            
+            <div class="flex flex-col items-center">
+                <p class="text-[#F5F5F7] text-lg font-light italic mb-4 max-w-xs text-center">
+                    "En un mundo lleno de ruido, el silencio es el arma más poderosa."
+                </p>
+                <div class="flex gap-6 mt-4">
+                    <a href="https://www.instagram.com/eliseoooook/" target="_blank" class="p-3 bg-[#1C1C1E] rounded-full hover:bg-white hover:text-black transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" class="p-3 bg-[#1C1C1E] rounded-full hover:bg-white hover:text-black transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-right hidden md:block">
+                <p class="text-[10px] font-bold tracking-[0.2em] text-[#424245] uppercase">
+                    © 2025 E. STRATEGY. TODOS LOS DERECHOS RESERVADOS.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica de Scroll para Navbar
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Descarga de vCard
+        function downloadVCard() {
+            const vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:Eliseo Consultor Digital\nTEL;TYPE=CELL:+543795041420\nTITLE:Consultor Digital\nEND:VCARD";
+            const blob = new Blob([vcard], { type: "text/vcard" });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'Eliseo_Digital.vcf';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+    </script>
+
+</body>
+</html>
